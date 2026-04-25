@@ -1,0 +1,9 @@
+{
+  "name": "private-issues-roadmap",
+  "version": "1.0.0",
+  "description": "Turn private GitHub Issues into a public product roadmap with anonymous voting. Deploy to Netlify in minutes.",
+  "private": true,
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

@@ -1,0 +1,7 @@
+[build]
+  # Point Netlify at the adapter's functions directory
+  functions = "adapters/netlify/functions"
+
+[dev]
+  # Local dev port
+  port = 8888

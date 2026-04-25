@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ─── Customise these ─── -->
+  <title>Roadmap — Your Product</title>
+  <meta name="description" content="See what we're building. Explore planned features, work in progress, and recently shipped updates.">
+  <meta property="og:title"       content="Product Roadmap">
+  <meta property="og:description" content="What we're building, what's in progress, and what just shipped.">
+  <meta property="og:type"        content="website">
+  <!-- ──────────────────────── -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="roadmap.css">
+</head>
+
+<body>
+
+  <div class="ambient" aria-hidden="true"></div>
+
+  <!-- ─── NAV — customise brand + links ─── -->
+  <nav>
+    <a class="nav-brand" href="/" id="nav-home">Your Product</a>
+    <div class="nav-links">
+      <a class="nav-link active" href="/roadmap.html" id="nav-roadmap" aria-current="page">Roadmap</a>
+      <!-- Add more links here -->
+    </div>
+    <!-- <a class="nav-cta" href="/#signup">Sign up</a> -->
+  </nav>
+
+  <!-- ─── PAGE HEADER — customise copy ─── -->
+  <header class="page-header">
+    <p class="page-eyebrow">What we're building</p>
+    <h1 class="page-title">Product <span class="hl">Roadmap</span></h1>
+    <p class="page-sub">
+      A live view of what's planned, in progress, and recently shipped —
+      sourced directly from our GitHub issues.
+    </p>
+  </header>
+
+  <!-- ─── ROADMAP (populated by roadmap.js) ─── -->
+  <main class="roadmap-wrap" id="roadmapWrap">
+    <div class="state-message" id="loadingState" aria-live="polite">
+      <div class="state-spinner" role="status" aria-label="Loading roadmap…"></div>
+      <p>Loading roadmap…</p>
+    </div>
+  </main>
+
+  <script src="roadmap.js"></script>
+
+</body>
+</html>
